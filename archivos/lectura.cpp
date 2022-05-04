@@ -6,7 +6,7 @@ int main ()
    int f;
    FILE * pFile;
 
-   pFile = fopen ("file2.txt","r");
+   pFile = fopen("file2.txt","r");
    if (pFile == NULL) {
       printf("no such file.");
       return 0;
