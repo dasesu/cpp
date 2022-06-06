@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-main(){  
+int main(){  
    FILE *fp;  
    fp = fopen("file.txt", "w");
    fprintf(fp, "Hello file by fprintf...\n");
@@ -8,4 +8,5 @@ main(){
    fprintf(fp, "the x value is %d\n", x);
    fprintf(fp, "Hello file by fprintf...\n");
    fclose(fp);
+   return 0;
 }  

@@ -4,40 +4,40 @@ int main ()
 {
    char str [80];
    int f;
-   FILE * pFile;
+   FILE * fp;
 
-   pFile = fopen("file2.txt","r");
-   if (pFile == NULL) {
+   fp = fopen("file2.txt","r");
+   if (fp == NULL) {
       printf("no such file.");
       return 0;
    }else{
-      //while(!feof(pFile) ){
-         fscanf(pFile, "%d ", &f);
+      //while(!feof(fp) ){
+         fscanf(fp, "%d ", &f);
          printf ("I have read: %d\n",f );
 
-         fscanf(pFile, "%d ", &f);
+         fscanf(fp, "%d ", &f);
          printf ("I have read: %d\n",f );
 
-         fscanf(pFile, "%d\n", &f);
+         fscanf(fp, "%d\n", &f);
          printf ("I have read: %d\n",f );
          //////
-         fscanf(pFile, "%d ", &f);
+         fscanf(fp, "%d ", &f);
          printf ("I have read: %d\n",f );
 
-         fscanf(pFile, "%d ", &f);
+         fscanf(fp, "%d ", &f);
          printf ("I have read: %d\n",f );
 
-         fscanf(pFile, "%d\n", &f);
+         fscanf(fp, "%d\n", &f);
          printf ("I have read: %d\n",f );
          //////
-         fscanf(pFile, "%s\n", str);
+         fscanf(fp, "%s\n", str);
          printf ("I have read: %s\n", str );
-         fscanf(pFile, "%s\n", str);
+         fscanf(fp, "%s\n", str);
          printf ("I have read: %s\n", str );
-         fscanf(pFile, "%s\n", str);
+         fscanf(fp, "%s\n", str);
          printf ("I have read: %s\n", str );
       //}
    }
-   fclose (pFile);
+   fclose (fp);
    return 0;
 }

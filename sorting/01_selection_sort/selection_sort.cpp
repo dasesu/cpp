@@ -38,7 +38,7 @@ int main(){
 
    fp = fopen("output.txt", "w");
    i=0;
-   while(i<10000){
+   while(i<tam){
       fprintf(fp,"%d\n", A[i]);
       i++;
    }
@@ -46,3 +46,4 @@ int main(){
 
    return 0;
 }
+
