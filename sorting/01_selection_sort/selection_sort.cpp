@@ -19,7 +19,6 @@
       return 0;
    }
 
-
    int main(){
       FILE *fp;
       int val{0};

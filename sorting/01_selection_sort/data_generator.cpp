@@ -6,7 +6,7 @@
 int main(int argc, char *argv[]){
    FILE *fp;
    fp = fopen("file.txt", "w");
-   int val{0};
+   ints val{0};
 
    /* initialize random seed: */
    srand (time(NULL));
