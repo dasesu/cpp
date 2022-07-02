@@ -1,28 +1,28 @@
 #include <iostream>
 #include <pthread.h>
 int selection_sort(int *A, int tam) {
-   // Es un algoritmo que tiene una complejidad de tiempo de O(n^2)
-   int pos_min{0}; // almacena la posicion del valor minimo parcial
-   for (int j = 0; j < tam - 1; j++) {
-      pos_min = j;
-      for (int i = j + 1; i < tam; i++) {
-         if (A[i] < A[pos_min]) {
-            pos_min = i;
-         }
+  // Es un algoritmo que tiene una complejidad de tiempo de O(n^2)
+  int pos_min{0}; // almacena la posicion del valor minimo parcial
+  for (int j = 0; j < tam - 1; j++) {
+    pos_min = j;
+    for (int i = j + 1; i < tam; i++) {
+      if (A[i] < A[pos_min]) {
+        pos_min = i;
       }
-      printf("el minimo actual es: %d\n", A[pos_min]);
-      int auxok{}; // variable auxiliar
-      auxok = A[j];
-      A[j] = A[pos_min];
-      A[pos_min] = auxok;
-   }
-   return 0;
+    }
+    printf("el minimo actual es: %d\n", A[pos_min]);
+    int auxok{}; // variable auxiliar
+    auxok = A[j];
+    A[j] = A[pos_min];
+    A[pos_min] = auxok;
+  }
+  return 0;
 }
 
 int main() {
-   
+
   FILE *fp;
-  int val{0};
+               int val{0};
   int tam{10000};
   int A[tam] = {}; // lo mismo que crear un for(int i=0;i<tam;i++){ A[i] = 0; }
   fp = fopen("file.txt", "r");
