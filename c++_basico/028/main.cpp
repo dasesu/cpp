@@ -11,5 +11,18 @@
     std::cin >> c; // c = 'o', "la" se deja en cola
     std::cout << "has escrito: " << c << '\n';
 
+    // Nota: El siguiente cin no le pide al usuario una entrada. usa la entrada de la cola
+    std::cin >> c; // c = 'o', "la" se deja en cola
+    std::cout << "has escrito: " << c << '\n';
+
+    // Nota: El siguiente cin no le pide al usuario una entrada. usa la entrada de la cola
+    std::cin >> c; // c = 'o', "la" se deja en cola
+    std::cout << "has escrito: " << c << '\n';
+
+    // Nota: El siguiente cin no le pide al usuario una entrada. usa la entrada de la cola
+    std::cin >> c; // c = 'o', "la" se deja en cola
+    std::cout << "has escrito: " << c << '\n';
+    
+
     return 0;
  }

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <pthread.h>
-int selection_sort(int *A, int tam) {
+int selection_sort(int &A, int tam) {
   // Es un algoritmo que tiene una complejidad de tiempo de O(n^2)
   int pos_min{0}; // almacena la posicion del valor minimo parcial
   for (int j = 0; j < tam - 1; j++) {
@@ -22,8 +22,8 @@ int selection_sort(int *A, int tam) {
 int main() {
 
   FILE *fp;
-               int val{0};
-  int tam{10000};
+int val{0};
+int tam{10000};
   int A[tam] = {}; // lo mismo que crear un for(int i=0;i<tam;i++){ A[i] = 0; }
   fp = fopen("file.txt", "r");
   int i{0};
