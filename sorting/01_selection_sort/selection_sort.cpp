@@ -21,7 +21,7 @@ int selection_sort(int &A, int tam) {
 
 int main() {
 
-  FILE *fp;
+FILE *fp;
 int val{0};
 int tam{10000};
   int A[tam] = {}; // lo mismo que crear un for(int i=0;i<tam;i++){ A[i] = 0; }
