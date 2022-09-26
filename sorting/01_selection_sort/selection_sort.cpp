@@ -1,6 +1,7 @@
 #include <iostream>
 #include <pthread.h>
-int selection_sort(int &A, int tam) {
+
+int selection_sort(int A[], int tam) {
   // Es un algoritmo que tiene una complejidad de tiempo de O(n^2)
   int pos_min{0}; // almacena la posicion del valor minimo parcial
   for (int j = 0; j < tam - 1; j++) {
