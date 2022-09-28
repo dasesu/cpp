@@ -1,10 +1,10 @@
 #include <iostream>
 
 int main(){
-    unsigned short x{65535};
+    short x{32767};
     std::cout << "el valor de x es: " << x << '\n';
 
-    x=65536;
+    x=32768;
     std::cout << "el valor de y es: " << x << '\n';
     return 0;
 }
